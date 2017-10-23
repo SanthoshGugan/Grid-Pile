@@ -45,20 +45,27 @@
   height: 400px;
 }
 
+/* line 43, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.footer {
+  color: white;
+  margin: 0 auto;
+  background: black;
+}
+
 /********************************************************************************/
 /* Tablet */
 /********************************************************************************/
 @media (max-width: 1170px) and (min-width: 990px) {
-  /* line 49, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 55, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 53, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 59, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 57, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 63, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
   }
@@ -68,16 +75,16 @@
 /* Mobile SM */
 /*******************************************************************************/
 @media (max-width: 989px) and (min-width: 750px) {
-  /* line 72, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 78, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 76, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 82, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 80, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 86, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
   }
@@ -86,24 +93,24 @@
 /*Stephen*/
 /* Tablet */
 @media (max-width: 1170px) {
-  /* line 91, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 97, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
     grid-template-columns: 240px 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-rows: auto;
   }
-  /* line 98, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 104, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 1/auto;
   }
-  /* line 103, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 109, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 3/auto;
   }
-  /* line 108, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 114, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 2/auto;
   }
@@ -111,24 +118,24 @@
 
 /* Mobile */
 @media (max-width: 750px) {
-  /* line 117, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 123, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     grid-auto-rows: auto;
   }
-  /* line 124, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 130, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 2/4;
   }
-  /* line 129, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 135, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 4/8;
   }
-  /* line 134, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 140, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 1/2;
   }
