@@ -1,30 +1,36 @@
 /*Santhosh*/
-/* line 10, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 4, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 body {
   font-family: 'Helvetica', 'Arial';
+  background: #E6E6E6;
 }
 
-/* line 13, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 8, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 16, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .header {
   padding: 5% 0%;
   text-align: center;
   background-color: white;
 }
 
-/* line 18, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 21, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .header .heading {
   font-size: 7.5em;
   text-transform: uppercase;
 }
 
-/* line 23, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 26, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .header .subHeading {
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 3%;
 }
 
-/* line 29, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 32, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent {
   display: grid;
   grid-template-columns: 240px auto 240px;
@@ -32,7 +38,7 @@ body {
   grid-auto-rows: auto;
 }
 
-/* line 35, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 38, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .asideLeft {
   background-color: #0082CB;
   grid-column: 1/2;
@@ -41,7 +47,7 @@ body {
   font-size: 17px;
 }
 
-/* line 41, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 44, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .asideRight {
   background-color: #FF7557;
   grid-column: 3/4;
@@ -50,7 +56,7 @@ body {
   font-size: 17px;
 }
 
-/* line 47, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 50, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent {
   background-color: white;
   height: 500px;
@@ -58,25 +64,75 @@ body {
   grid-row: 1/2;
 }
 
-/* line 53, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 56, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid {
   border: 1px solid black;
   display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  padding: 22px;
+  background: #3D454D;
+  text-align: center;
 }
 
-/* line 56, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 64, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid h3 {
+  font-weight: bold;
+}
+
+/* line 67, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid img {
+  height: 290px;
+  width: 450px;
+}
+
+/* line 71, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid p {
+  padding: 22px;
+  font-size: 18px;
+}
+
+/* line 75, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid .grids {
-  background-color: gold;
-  height: 400px;
+  margin-right: 15px;
+  background-color: white;
 }
 
-/* line 61, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 80, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid .flexs {
-  background-color: magenta;
-  height: 400px;
+  grid-template-column: 50% 50%;
+  grid-template-row: auto;
+  background-color: white;
 }
 
-/* line 69, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 89, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.baseline-content, .magical, .subgrid {
+  padding: 25px;
+}
+
+/* line 90, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.baseline-content h2, .magical h2, .subgrid h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 94, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.baseline-content p, .magical p, .subgrid p {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+/* line 101, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.magical {
+  background-color: #FFF7E3;
+}
+
+/* line 106, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+.subgrid {
+  background-color: #E6E6E6;
+}
+
+/* line 111, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .footer {
   padding: 20px 0;
   color: white;
@@ -84,7 +140,7 @@ body {
   font-size: 1.2em;
 }
 
-/* line 75, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+/* line 117, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .footer a, .footer a.link:hover, .footer a.link:active, .footer a.link:visited, .footer a.link:focus {
   text-decoration: underline;
   color: white !important;
@@ -94,16 +150,16 @@ body {
 /* Tablet */
 /********************************************************************************/
 @media (max-width: 1170px) and (min-width: 990px) {
-  /* line 87, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 129, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 91, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 133, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 95, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 137, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
   }
@@ -113,16 +169,16 @@ body {
 /* Mobile SM */
 /*******************************************************************************/
 @media (max-width: 989px) and (min-width: 750px) {
-  /* line 110, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 152, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 114, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 156, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 118, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 160, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
   }
@@ -132,17 +188,17 @@ body {
 /* Mobile XS */
 /******************************************************************************/
 @media (max-width: 750px) {
-  /* line 133, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 175, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
-  /* line 137, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 179, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: auto;
     grid-row: 1/2;
   }
-  /* line 142, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 184, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: auto;
     grid-row: 2/3;
@@ -152,24 +208,23 @@ body {
 /*Stephen*/
 /* Tablet */
 @media (max-width: 1170px) {
-  /* line 154, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 196, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent {
-    display: grid;
     grid-template-columns: 240px 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-rows: auto;
   }
-  /* line 161, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 202, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 1/auto;
   }
-  /* line 166, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 207, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 3/auto;
   }
-  /* line 171, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 212, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 2/auto;
   }
@@ -177,24 +232,23 @@ body {
 
 /* Mobile */
 @media (max-width: 750px) {
-  /* line 180, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 221, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     grid-auto-rows: auto;
   }
-  /* line 187, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 227, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 2/4;
   }
-  /* line 192, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 232, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 4/8;
   }
-  /* line 197, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  /* line 237, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 1/2;
   }
