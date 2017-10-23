@@ -1,5 +1,30 @@
 /*Santhosh*/
-/* line 4, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 3, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+body {
+  font-family: 'Helvetica', 'Arial';
+}
+
+/* line 6, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.header {
+  padding: 5% 0%;
+  text-align: center;
+  background-color: white;
+}
+
+/* line 11, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.header .heading {
+  font-size: 7.5em;
+  text-transform: uppercase;
+}
+
+/* line 16, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.header .subHeading {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 3%;
+}
+
+/* line 22, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent {
   display: grid;
   grid-template-columns: 240px auto 240px;
@@ -7,21 +32,21 @@
   grid-auto-rows: auto;
 }
 
-/* line 10, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 28, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .asideLeft {
   background-color: blue;
   height: 500px;
   grid-column: 1/2;
 }
 
-/* line 16, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 34, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .asideRight {
   background-color: red;
   height: 500px;
   grid-column: 3/4;
 }
 
-/* line 22, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 40, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent {
   background-color: white;
   height: 500px;
@@ -29,19 +54,19 @@
   grid-row: 1/2;
 }
 
-/* line 28, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 46, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid {
   border: 1px solid black;
   display: grid;
 }
 
-/* line 31, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 49, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid .grids {
   background-color: gold;
   height: 400px;
 }
 
-/* line 36, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 54, E:/Santhosh/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent .innerGrid .flexs {
   background-color: magenta;
   height: 400px;
@@ -51,16 +76,16 @@
 /* Tablet */
 /********************************************************************************/
 @media (max-width: 1170px) and (min-width: 990px) {
-  /* line 50, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 68, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 54, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 72, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 58, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 76, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
   }
@@ -70,42 +95,63 @@
 /* Mobile SM */
 /*******************************************************************************/
 @media (max-width: 989px) and (min-width: 750px) {
-  /* line 73, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 91, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
-  /* line 77, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 95, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .grids {
     grid-column: 1/2;
   }
-  /* line 81, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 99, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent .innerGrid .flexs {
     grid-column: 2/3;
+  }
+}
+
+/******************************************************************************/
+/* Mobile XS */
+/******************************************************************************/
+@media (max-width: 750px) {
+  /* line 114, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  /* line 118, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .grids {
+    grid-column: auto;
+    grid-row: 1/2;
+  }
+  /* line 123, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .flexs {
+    grid-column: auto;
+    grid-row: 2/3;
   }
 }
 
 /*Stephen*/
 /* Tablet */
 @media (max-width: 1170px) {
-  /* line 92, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 135, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
     grid-template-columns: 240px 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-rows: auto;
   }
-  /* line 99, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 142, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 1/3;
   }
-  /* line 104, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 147, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 3/9;
   }
-  /* line 109, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 152, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 2/6;
   }
@@ -113,24 +159,24 @@
 
 /* Mobile */
 @media (max-width: 750px) {
-  /* line 118, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 161, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     grid-auto-rows: auto;
   }
-  /* line 125, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 168, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .asideLeft {
     grid-column: 1/2;
     grid-row: 2/4;
   }
-  /* line 130, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 173, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .asideRight {
     grid-column: 1/2;
     grid-row: 4/8;
   }
-  /* line 135, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  /* line 178, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent .centerContent {
     grid-column: 1/2;
   }

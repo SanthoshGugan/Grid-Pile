@@ -1,6 +1,24 @@
 // Custom CSS
 /*Santhosh*/
+body{
+	font-family: 'Helvetica', 'Arial';
+}
+.header{
+	padding: 5% 0%;
+	text-align: center;
+	background-color: white;
 
+	.heading{
+		font-size: 7.5em;
+		text-transform: uppercase;
+	}	
+
+	.subHeading{
+		font-size: 1.5em;
+		font-weight: 600;
+		margin-top: 3%;
+	}
+}
 .mainContent{
 	display: grid;
 	grid-template-columns: 240px auto 240px;
@@ -80,6 +98,31 @@
 
 				.flexs{
 					grid-column: 2/3;
+				}
+			}
+		}
+	}
+}
+
+/******************************************************************************/
+/* Mobile XS */
+/******************************************************************************/
+@media (max-width: 750px){
+	.mainContent{
+		.centerContent{
+
+			.innerGrid{
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+
+				.grids{
+					grid-column: auto;
+					grid-row: 1/2;
+				}
+
+				.flexs{
+					grid-column: auto;
+					grid-row: 2/3;
 				}
 			}
 		}
