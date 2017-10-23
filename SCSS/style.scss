@@ -23,26 +23,65 @@
 		background-color: white;
 		height: 500px;
 		grid-column: 2/3;
+
+		.innerGrid{
+			border: 1px solid black;
+			display: grid;
+			.grids{
+				background-color: gold;
+				height: 400px;
+			}
+
+			.flexs{
+				background-color: magenta;
+				height: 400px;
+			}
+		}
 	}
 }
 /********************************************************************************/
 /* Tablet */
 /********************************************************************************/
-/*@media (max-width: 1170px) and (min-width: 990px){
+@media (max-width: 1170px) and (min-width: 990px){
 	.mainContent{
-		.asideLeft{
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
-
-		.asideRight{
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-
 		.centerContent{
-			grid-column: 2/4;
+
+			.innerGrid{
+				grid-template-columns: 50% 50%;
+				grid-template-rows: auto;
+
+				.grids{
+					grid-column: 1/2;
+				}
+
+				.flexs{
+					grid-column: 2/3;
+				}
+			}
 		}
 	}
-}*/
+}
+
+/*******************************************************************************/
+/* Mobile SM */
+/*******************************************************************************/
+@media (max-width: 989px) and (min-width: 750px){
+	.mainContent{
+		.centerContent{
+
+			.innerGrid{
+				grid-template-columns: 50% 50%;
+				grid-template-rows: auto;
+
+				.grids{
+					grid-column: 1/2;
+				}
+
+				.flexs{
+					grid-column: 2/3;
+				}
+			}
+		}
+	}
+}
 /*Stephen*/

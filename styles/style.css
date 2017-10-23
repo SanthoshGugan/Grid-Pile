@@ -28,26 +28,62 @@
   grid-column: 2/3;
 }
 
+/* line 27, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid {
+  border: 1px solid black;
+  display: grid;
+}
+
+/* line 30, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid .grids {
+  background-color: gold;
+  height: 400px;
+}
+
+/* line 35, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+.mainContent .centerContent .innerGrid .flexs {
+  background-color: magenta;
+  height: 400px;
+}
+
 /********************************************************************************/
 /* Tablet */
 /********************************************************************************/
-/*@media (max-width: 1170px) and (min-width: 990px){
-	.mainContent{
-		.asideLeft{
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
+@media (max-width: 1170px) and (min-width: 990px) {
+  /* line 49, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  /* line 53, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .grids {
+    grid-column: 1/2;
+  }
+  /* line 57, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .flexs {
+    grid-column: 2/3;
+  }
+}
 
-		.asideRight{
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
+/*******************************************************************************/
+/* Mobile SM */
+/*******************************************************************************/
+@media (max-width: 989px) and (min-width: 750px) {
+  /* line 72, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  /* line 76, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .grids {
+    grid-column: 1/2;
+  }
+  /* line 80, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent .innerGrid .flexs {
+    grid-column: 2/3;
+  }
+}
 
-		.centerContent{
-			grid-column: 2/4;
-		}
-	}
-}*/
 /*Stephen*/
 
 /*# sourceMappingURL=../styles/style.map */
