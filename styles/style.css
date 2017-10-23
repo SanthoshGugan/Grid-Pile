@@ -87,7 +87,7 @@
 
 /*Stephen*/
 /* Tablet */
-@media (max-width: 1025px) {
+@media (max-width: 1170px) {
   /* line 92, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
@@ -112,7 +112,7 @@
 }
 
 /* Mobile */
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   /* line 118, E:/Santhosh/Grid-Pile/SCSS/style.scss */
   .mainContent {
     display: grid;
