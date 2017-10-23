@@ -85,5 +85,54 @@
 }
 
 /*Stephen*/
+/* Tablet */
+@media (max-width: 1025px) {
+  /* line 92, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+  /* line 99, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideLeft {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  /* line 104, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideRight {
+    grid-column: 1/2;
+    grid-row: 3/9;
+  }
+  /* line 109, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent {
+    grid-column: 2/6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  /* line 118, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-auto-rows: auto;
+  }
+  /* line 125, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideLeft {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  /* line 130, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideRight {
+    grid-column: 1/2;
+    grid-row: 4/8;
+  }
+  /* line 135, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent {
+    grid-column: 1/2;
+  }
+}
 
 /*# sourceMappingURL=../styles/style.map */
