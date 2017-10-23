@@ -46,3 +46,53 @@
 	}
 }*/
 /*Stephen*/
+/* Tablet */
+@media (max-width: 1025px){
+  .mainContent {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+	.mainContent{
+		.asideLeft{
+			grid-column: 1/2;
+			grid-row: 1/3;
+		}
+
+		.asideRight{
+			grid-column: 1/2;
+			grid-row: 3/9;
+		}
+
+		.centerContent{
+			grid-column: 2/6;
+		}
+	}
+
+}
+
+/* Mobile */
+@media (max-width: 800px){
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-auto-rows: auto;
+  }
+	.mainContent{
+		.asideLeft{
+			grid-column: 1/2;
+			grid-row: 2/4;
+		}
+
+		.asideRight{
+			grid-column: 1/2;
+			grid-row: 4/8;
+		}
+
+		.centerContent{
+			grid-column: 1/2;
+		}
+	}
+}

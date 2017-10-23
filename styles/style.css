@@ -1,5 +1,5 @@
 /*Santhosh*/
-/* line 4, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 4, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent {
   display: grid;
   grid-template-columns: 240px auto 240px;
@@ -7,21 +7,21 @@
   grid-auto-rows: auto;
 }
 
-/* line 10, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 10, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .asideLeft {
   background-color: blue;
   height: 500px;
   grid-column: 1/2;
 }
 
-/* line 16, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 16, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .asideRight {
   background-color: red;
   height: 500px;
   grid-column: 3/4;
 }
 
-/* line 22, E:/Santhosh/Grid-Pile/SCSS/style.scss */
+/* line 22, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
 .mainContent .centerContent {
   background-color: white;
   height: 500px;
@@ -49,5 +49,54 @@
 	}
 }*/
 /*Stephen*/
+/* Tablet */
+@media (max-width: 1025px) {
+  /* line 51, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+  /* line 58, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideLeft {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  /* line 63, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideRight {
+    grid-column: 1/2;
+    grid-row: 3/9;
+  }
+  /* line 68, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent {
+    grid-column: 2/6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  /* line 77, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-auto-rows: auto;
+  }
+  /* line 84, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideLeft {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  /* line 89, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .asideRight {
+    grid-column: 1/2;
+    grid-row: 4/8;
+  }
+  /* line 94, /Users/marshs2/Documents/github/Grid-Pile/SCSS/style.scss */
+  .mainContent .centerContent {
+    grid-column: 1/2;
+  }
+}
 
 /*# sourceMappingURL=../styles/style.map */
