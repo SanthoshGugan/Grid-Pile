@@ -35,21 +35,30 @@ body{
 	grid-template-rows: auto;
 	grid-auto-rows: auto;
 
+	
 	.asideLeft{
 		background-color: $leftAside;
 		grid-column: 1/2;
 		@include padding(33px);
+
+		h2 {
+			margin-bottom: 15%;
+			text-align: center;
+		}
 	}
 
 	.asideRight{
 		background-color: $rightAside;
 		grid-column: 3/4;
 		@include padding(33px);
+		h2{
+		margin-bottom: 15%;
+		text-align: center;
+		}
 	}
 
 	.centerContent{
 		background-color: white;
-		height: 500px;
 		grid-column: 2/3;
 		grid-row: 1/2;
 
@@ -73,13 +82,13 @@ body{
 				font-size: 18px;
 			}
 			.grids{
+				grid-column:1/2;
     			margin-right: 15px;
 				background-color:$white;
 			}
 
 			.flexs{
-				grid-template-column: 50% 50%;
-				grid-template-row: auto;
+				grid-column:2/3;
 				background-color:$white;
 			}
 		}
@@ -179,6 +188,7 @@ body{
 				.grids{
 					grid-column: auto;
 					grid-row: 1/2;
+					margin-right: 0px;
 				}
 
 				.flexs{
@@ -194,7 +204,7 @@ body{
 /* Tablet */
 @media (max-width: 1170px){
   .mainContent {
-    grid-template-columns: 240px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-rows: auto;
   }
@@ -210,7 +220,7 @@ body{
 		}
 
 		.centerContent{
-			grid-column: 2/auto;
+			grid-column: 2/4;
 		}
 	}
 
@@ -219,23 +229,24 @@ body{
 /* Mobile */
 @media (max-width: 750px){
   .mainContent {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
+    grid-template-columns: auto;
+    grid-template-rows: 33% 33% 33%;
     grid-auto-rows: auto;
   }
 	.mainContent{
 		.asideLeft{
 			grid-column: 1/2;
-			grid-row: 2/4;
+			grid-row: 2/3;
 		}
 
 		.asideRight{
 			grid-column: 1/2;
-			grid-row: 4/8;
+			grid-row: 3/4;
 		}
 
 		.centerContent{
 			grid-column: 1/2;
+			grid-row: 1/2;
 		}
 	}
 }
