@@ -52,12 +52,13 @@ body {
       grid-template-rows: auto;
       padding: 22px;
       background: #3D454D;
-      text-align: center; }
+      text-align: center;
+      /* img {
+      	height: 290px;
+      	width: 450px;
+      } */ }
       .mainContent .centerContent .innerGrid h3 {
         font-weight: bold; }
-      .mainContent .centerContent .innerGrid img {
-        height: 290px;
-        width: 450px; }
       .mainContent .centerContent .innerGrid p {
         padding: 22px;
         font-size: 18px; }
