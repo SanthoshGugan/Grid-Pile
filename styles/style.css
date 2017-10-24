@@ -80,6 +80,8 @@ body {
 
 .magical {
   background-color: #FFF7E3; }
+  .magical p {
+    columns: 2; }
 
 .subgrid {
   background-color: #E6E6E6; }
@@ -128,7 +130,10 @@ body {
       margin-right: 0px; }
     .mainContent .centerContent .innerGrid .flexs {
       grid-column: auto;
-      grid-row: 2/3; } }
+      grid-row: 2/3; }
+
+  .magical p {
+    columns: 1; } }
 /*Stephen*/
 /* Tablet */
 @media (max-width: 1170px) {

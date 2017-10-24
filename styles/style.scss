@@ -110,6 +110,9 @@ body{
 .magical {
 	@extend .baseline-content;
 	background-color: $magical;
+	p{
+		columns: 2;		
+	}
 }
 
 .subgrid {
@@ -197,6 +200,10 @@ body{
 				}
 			}
 		}
+	}
+
+	.magical p{
+		columns: 1;
 	}
 }
 
