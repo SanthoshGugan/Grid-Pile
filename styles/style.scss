@@ -3,7 +3,7 @@
 /*Santhosh*/
 body{
 	font-family: 'Helvetica', 'Arial';
-	background: $subgrid;
+	background-color: $subgrid !important;
 }
 .container-fluid {
 	padding: 0;
@@ -58,7 +58,7 @@ body{
 	}
 
 	.centerContent{
-		background-color: white;
+		background-color: $subgrid;
 		grid-column: 2/3;
 		grid-row: 1/2;
 
@@ -204,6 +204,10 @@ body{
 
 	.magical p{
 		columns: 1;
+	}
+
+	.subgrid {
+		background-color: $mobilesubgrid !important;
 	}
 }
 
